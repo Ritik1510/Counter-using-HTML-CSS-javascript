@@ -1,0 +1,146 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Playball&family=Roboto+Mono&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Hubballi&family=Playball&family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  color: #10f4e9;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.counter_header {
+  height: 20px;
+  width: 100%;
+  background: transparent;
+  color: #10f4e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  text-shadow: -1px -1px 0 #000, /* Top-left shadow (black) */ -1px -1px 0 #000,
+    /* Top-right shadow (black) */ -1px -1px 0 #000,
+    /* Bottom-left shadow (black) */ -1px -1px 0 #000; /* Bottom-right shadow (black) */
+}
+.container {
+  background: transparent;
+  margin-top: 4%;
+  border-radius: 5px;
+  height: 400px;
+  width: 400px;
+  box-shadow: -2px -2px 9px rgb(2, 0, 36, 0.9),
+    inset -2px -2px rgb(2, 0, 36, 0.9);
+}
+
+.lableBox {
+  text-shadow: -1px -1px 0 #000, -1px -1px 0 #000, -1px -1px 0 #000,
+    -1px -1px 0 #000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Add this line to prevent content overflow */
+  white-space: nowrap; /* Add this line to prevent line breaks */
+}
+
+#counting_Number {
+  text-wrap: balance;
+  font-size: 7rem;
+  max-width: 75%; /* Ensure it doesn't overflow horizontally */
+  text-overflow: ellipsis; /* Add an ellipsis for overflow */
+}
+
+button {
+  border-radius: 7px;
+  cursor: pointer;
+  background: transparent;
+  padding: 10px;
+  font-weight: 700;
+  margin: 5px;
+  border: none;
+  box-shadow: 3px 1px 5px rgb(16, 244, 233, 0.9);
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBox {
+  height: 73px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submitBtn {
+  color: rgb(236, 215, 21);
+  box-shadow: 3px 1px 5px rgb(236, 215, 21, 0.9);
+}
+
+.hidden {
+  display: none;
+  height: 50px;
+  width: 100%;
+}
+
+.input_Box {
+  height: 50px;
+  width: 100%;
+  border: 2px solid blue;
+}
+
+.abc {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inputContainer {
+  color: rgb(16, 244, 233, 0.9);
+  height: 75%;
+  width: 70%;
+  border-radius: 9px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 3px 1px 5px rgb(16, 244, 233, 0.9);
+}
+
+/* this is used for remove default arrow button using input tag   */
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield; /* For other browsers */
+  /* Additional styling for the input[type="number"] element */
+}
+
+.copyright {
+  position: absolute;
+  bottom: -56px;
+  left: 10px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, /* Top-left shadow (black) */ 
+    - 1px -1px 0 #000, /* Top-right shadow (black) */
+    -1px -1px 0 #000, /* Bottom-left shadow (black) */
+    -1px -1px 0 #000; /* Bottom-right shadow (black) */
+}
